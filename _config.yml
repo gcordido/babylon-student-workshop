@@ -9,11 +9,11 @@
 title: University of Florida Innogators Babylon.js Workshop.
 email: gcordido@microsoft.com
 description: Workshop for the University of Florida Innogators group on the basics of Babylon.js.
-baseurl: "/uf-babylonjs-workshop" # the subpath of your site, e.g. /blog
+baseurl: "/babylon-student-workshop" # the subpath of your site, e.g. /blog
 url: "https://gcordido.github.io" # the base hostname & protocol for your site
 
 # Logo settings
-logo-image-url: images/american-football.png
+logo-image-url: images/babylonlogo.png
 font-awesome-icon-logo:
 
 # Social settings
