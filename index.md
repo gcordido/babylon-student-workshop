@@ -2,9 +2,8 @@
 layout: default
 title: Home
 ---
-EDIT THIS
 
-<h1>Introduction to Babylon.js</h1>
+<h1>Babylon.js: XR Experiences in the Web</h1>
 <p> Babylon.js is a Web rendering engine that allows the creation of XR applications completely on the web. From AR, VR to WebXR support, Babylon.js provides a simple but powerful developing experience. Babylon.js has a code-first approach, and through this workshop we will build a simple scenario where a player character can move and explore a forest setting.
 
     <b>Workshop Objectives</b>
