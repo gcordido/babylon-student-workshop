@@ -17,7 +17,7 @@ Babylon.js is a Web rendering engine that allows the creation of XR applications
 
 ## Access the Workshop
 
-You can access the workshop by visiting: [gcordido.github.io/babylon-student-workshop]("https://gcordido.github.io/babylon-student-workshop/")
+You can access the workshop by visiting: [gcordido.github.io/babylon-student-workshop](https://gcordido.github.io/babylon-student-workshop/)
 
 ## Need help?
 
