@@ -1,0 +1,27 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: University of Florida Innogators Babylon.js Workshop.
+email: gcordido@microsoft.com
+description: Workshop for the University of Florida Innogators group on the basics of Babylon.js.
+baseurl: "/uf-babylonjs-workshop" # the subpath of your site, e.g. /blog
+url: "https://gcordido.github.io" # the base hostname & protocol for your site
+
+# Logo settings
+logo-image-url: images/american-football.png
+font-awesome-icon-logo:
+
+# Social settings
+github_username: gcordido
+twitter_username: gcordidoa
+
+# Build settings
+markdown: kramdown
+
+# Layout settings
+home-link-in-menu: yes
