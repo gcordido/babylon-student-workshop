@@ -12,8 +12,7 @@ Babylon.js is a Web rendering engine that allows the creation of XR applications
 
 ### Completed Versions
 
-**Web**: [https://playground.babylonjs.com/#80T056#2](https://playground.babylonjs.com/#80T056#2)
-
+**Web**: [https://playground.babylonjs.com/#80T056#4](https://playground.babylonjs.com/#80T056#4)
 
 ## Access the Workshop
 
