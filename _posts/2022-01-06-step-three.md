@@ -14,7 +14,7 @@ Use the code snippets below to create a material and texture for the sky and gro
 
 ### Sky
 
-The code below creates a black sky for the scene. Add this snippet after the code for the **light**.
+To recreate a skybox, we can simply choose a color for our scene background. In this case we will use black. Add this snippet after the code for the **light**.
 
 ```javascript
     /**** Sky Color *****/
@@ -26,11 +26,14 @@ The code below creates a black sky for the scene. Add this snippet after the cod
 The code below creates a material and texture for the ground. Add this snippet after the code for the **ground**.
 
 ```javascript
+    //This provides our ground with a given texture, by first declaring the material object
     var groundMat = new BABYLON.StandardMaterial("groundMaterial");
-    groundMat.diffuseTexture = new BABYLON.Texture("https://raw.githubusercontent.com/aprilspeight/workshop-babylonjs/gh-pages/textures/brown-wood.jpg", scene);   
-    groundMat.diffuseTexture.uScale = 4;
-    groundMat.diffuseTexture.vScale = 4;
-    groundMat.specularColor = new BABYLON.Color3(.1, .1, .1);
+    //We define where the texture for the material is coming from
+    groundMat.diffuseTexture = new BABYLON.Texture("https://raw.githubusercontent.com/gcordido/babylon-student-workshop/gh-pages/textures/grass.jpg", scene);
+    //And determine how we want to spread said texture across the ground.
+    groundMat.diffuseTexture.uScale = 6;
+    groundMat.diffuseTexture.vScale = 6;
+    //Finally, we assign the groundMat object as the our ground object's material.
     ground.material = groundMat;
 ```
 
@@ -40,30 +43,34 @@ Provided below is the complete code for this step of the workshop.
 
 ```javascript
 var createScene = function () {
-    /**** This creates a basic Babylon Scene object *****/
+    //Creating a Babylon Scene Object, using the babylon engine.
     var scene = new BABYLON.Scene(engine);
 
-    /**** This creates a camera *****/
-    const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 10, new BABYLON.Vector3(0, 0, 0));
-
-    /***** This attaches the camera to the canvas *****/
+    //Create a camera object, which allows us to see the world we're building.
+    var camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 10, new BABYLON.Vector3(0, 0, 0));
+   
+   //Define where the camera will be attached, in this case the canvas we are working in.
     camera.attachControl(canvas, true);
 
-    /***** This creates a light *****/
+    //Creates a hemispheric light for the scene (allows for visibility of our objects)
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
 
     /**** Sky Color *****/
     scene.clearColor = BABYLON.Color3.Black();
 
-    /***** This creates a ground *****/
-    var ground = BABYLON.MeshBuilder.CreateGround("ground", { height: 7, width: 7, subdivisions: 4 }, scene);
+    //Creates a ground object, which allows us to have a more world-like scene, as well as guidance as to where to drop future objects.
+    var ground = BABYLON.MeshBuilder.CreateGround("ground", { width: 40, height: 40}, scene);
+
+    //This provides our ground with a given texture, by first declaring the material object
     var groundMat = new BABYLON.StandardMaterial("groundMaterial");
-    groundMat.diffuseTexture = new BABYLON.Texture("https://raw.githubusercontent.com/aprilspeight/workshop-babylonjs/gh-pages/textures/brown-wood.jpg", scene);   
-    groundMat.diffuseTexture.uScale = 4;
-    groundMat.diffuseTexture.vScale = 4;
-    groundMat.specularColor = new BABYLON.Color3(.1, .1, .1);
+    //We define where the texture for the material is coming from
+    groundMat.diffuseTexture = new BABYLON.Texture("https://raw.githubusercontent.com/gcordido/babylon-student-workshop/gh-pages/textures/grass.jpg", scene);
+    //And determine how we want to spread said texture across the ground.
+    groundMat.diffuseTexture.uScale = 6;
+    groundMat.diffuseTexture.vScale = 6;
+    //Finally, we assign the groundMat object as the our ground object's material.
     ground.material = groundMat;
-    
+
     return scene;
 };
 ```
