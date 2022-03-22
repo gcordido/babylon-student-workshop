@@ -69,6 +69,6 @@ var createScene = function () {
 ```
 
 <ul class="actions">
-<li><a href="https://aprilspeight.github.io/workshop-babylonjs/jekyll/update/2022/01/07/step-two.html" class="button special">Back</a></li>
-<li><a href="https://aprilspeight.github.io/workshop-babylonjs/jekyll/update/2022/01/05/step-four.html" class="button">Next</a></li>
+<li><a href="https://gcordido.github.io/babylon-student-workshop/jekyll/update/2022/01/07/step-two.html" class="button special">Back</a></li>
+<li><a href="https://gcordido.github.io/babylon-student-workshop/jekyll/update/2022/01/05/step-four.html" class="button">Next</a></li>
 </ul>
